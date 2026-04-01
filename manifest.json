@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Funda English Redirect",
+  "version": "1.0.0",
+  "description": "Automatically redirects Dutch Funda URLs to their English versions",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "webNavigation",
+    "tabs",
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "https://www.funda.nl/*"
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
